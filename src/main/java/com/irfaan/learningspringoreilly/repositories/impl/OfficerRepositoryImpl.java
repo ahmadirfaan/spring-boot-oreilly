@@ -1,7 +1,4 @@
-/**
- * Dana.id.
- * Copyright (c) 2017‐2021 All Rights Reserved.
- */
+
 package com.irfaan.learningspringoreilly.repositories.impl;
 
 import com.irfaan.learningspringoreilly.entities.Officer;

@@ -2,13 +2,21 @@ package com.irfaan.learningspringoreilly.entities;
 
 import com.alipay.tracer.biz.util.ToStringUtil;
 
+import javax.persistence.*;
+
 /**
  * @author Ahmad Irfaan Hibatullah
  * @version $Id: Officer.java, v 0.1 2021‐12‐20 11.57 Ahmad Irfaan Hibatullah Exp $$
  */
+@Entity
+@Table(name = "officers")
 public class Officer {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    @Enumerated(value = EnumType.STRING)
     private Rank rank;
+
     private String firstName;
     private String lastName;
 
